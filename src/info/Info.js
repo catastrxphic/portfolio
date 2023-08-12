@@ -17,11 +17,11 @@ export const info = {
     miniBio: [ 
         {
             emoji: '☕',
-            text: 'fueled by coffee'
+            text: 'Passionate of working at coffee or tea shops'
         },
         {
             emoji: '🏫',
-            text: 'Florida International University'
+            text: 'Florida International University Student'
         },
         {
             emoji: "💼",
