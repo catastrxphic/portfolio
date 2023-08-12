@@ -1,4 +1,4 @@
-import self from "../img/self.png"
+import self from "../img/self.jpeg"
 import mock1 from "../img/mock1.webp"
 import mock2 from "../img/mock2.webp"
 import mock3 from "../img/mock3.webp"
