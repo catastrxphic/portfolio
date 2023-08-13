@@ -7,7 +7,7 @@ import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
 import ParticlesBg from './Assets/ParticlesBG';
-// import { logGa } from '../log/log';
+import { logGa } from '../log/log';
 
 
 export default function BaseLayout() {
@@ -17,7 +17,7 @@ export default function BaseLayout() {
     let oppositeOfCurrentDarkMode = !darkMode;
     localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
     setDarkMode(oppositeOfCurrentDarkMode);
-   //  logGa('dark_mode_toggle', oppositeOfCurrentDarkMode ? 'dark' : 'light');
+    logGa('dark_mode_toggle', oppositeOfCurrentDarkMode ? 'dark' : 'light');
   }
 
   useEffect(() => {
@@ -44,22 +44,23 @@ export default function BaseLayout() {
    return (
       <Box className={darkMode ? Style.dark : Style.light}>
          <ParticlesBg darkMode={darkMode.valueOf()} />
-         <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
-               justifyContent={'space-between'}>
+
+         <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'} justifyContent={'space-between'}>
                
             <Grid item>
                <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
             </Grid>
+
             <Grid item flexGrow={1}>
                <Routes>
-                  <Route exact path={'/'} element={<Home darkMode={darkMode}/>} />
+                  <Route exact path={'/'} element={<Home darkMode={darkMode} />} />
                   <Route exact path={'/about'} element={<About/>}/>
                   <Route exact path={'/portfolio'} element={<Portfolio/>}/>
                </Routes>
             </Grid>
+
             <Grid item>
-               <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
-                    py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
+               <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'} py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
                   <p> Cami's Portforlio &hearts; by <a href={'https://paytonpierce.dev'}>Cami Copo Amador</a></p>
                   <p>&copy; August 2023</p>
                </Box>

@@ -1,22 +1,22 @@
-// import { initializeApp } from 'firebase/app';
-// import { getAnalytics, logEvent, isSupported } from 'firebase/analytics';
+import { initializeApp } from 'firebase/app';
+import { getAnalytics, logEvent, isSupported } from 'firebase/analytics';
 
-// const firebaseConfig = {
-//   apiKey: '',
-//   authDomain: '',
-//   projectId: '',
-//   storageBucket: '',
-//   messagingSenderId: '',
-//   appId: '',
-//   measurementId: '',
-// };
+const firebaseConfig = {
+  apiKey: '',
+  authDomain: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: '',
+};
 
-// const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
-// const isGaSupported = isSupported();
+const isGaSupported = isSupported();
 
-// const analytics = isGaSupported ? getAnalytics(app) : null;
+const analytics = isGaSupported ? getAnalytics(app) : null;
 
-// export const logGa = (eventName, eventParams = {}) => {
-//   isGaSupported ? logEvent(analytics, eventName, eventParams) : console.log(eventName, eventParams);
-// };
+export const logGa = (eventName, eventParams = {}) => {
+  isGaSupported ? logEvent(analytics, eventName, eventParams) : console.log(eventName, eventParams);
+};

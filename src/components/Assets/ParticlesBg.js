@@ -26,59 +26,104 @@ const ParticlesBg = ({ darkMode }) => {
     }, [darkMode, background, links, particle]);
 
     return (
-        <Particles
-    params={{
-	    "particles": {
-	        "number": {
-	            "value": 160,
-	            "density": {
-	                "enable": false
-	            }
-	        },
-	        "size": {
-	            "value": 3,
-	            "random": true,
-	            "anim": {
-	                "speed": 4,
-	                "size_min": 0.3
-	            }
-	        },
-	        "line_linked": {
-	            "enable": false
-	        },
-	        "move": {
-	            "random": true,
-	            "speed": 1,
-	            "direction": "top",
-	            "out_mode": "out"
-	        }
-	    },
-	    "interactivity": {
-	        "events": {
-	            "onhover": {
-	                "enable": true,
-	                "mode": "bubble"
-	            },
-	            "onclick": {
-	                "enable": true,
-	                "mode": "repulse"
-	            }
-	        },
-	        "modes": {
-	            "bubble": {
-	                "distance": 250,
-	                "duration": 2,
-	                "size": 0,
-	                "opacity": 0
-	            },
-	            "repulse": {
-	                "distance": 400,
-	                "duration": 4
-	            }
-	        }
-	    }
-	    }}
-        />
-    );
-};
-export default ParticlesBg;
+		<Particles
+		  id="tsparticles"
+		  init={particlesInit}
+		  loaded={particlesLoaded}
+		  options={{
+			background: {
+			  color: {
+				value: backgroundColor,
+			  },
+			},
+			fpsLimit: 60,
+			fullScreen: {
+			  enable: true,
+			  zIndex: -1,
+			},
+			interactivity: {
+			  detectsOn: 'window',
+			  events: {
+				onClick: {
+				  enable: true,
+				  mode: 'push',
+				},
+				onHover: {
+				  enable: true,
+				  mode: 'repulse',
+				},
+				resize: true,
+			  },
+			  modes: {
+				bubble: {
+				  distance: 40,
+				  duration: 2,
+				  opacity: 0.4,
+				  size: 40,
+				},
+				push: {
+				  quantity: 4,
+				},
+				repulse: {
+				  distance: 150,
+				  duration: 0.4,
+				},
+			  },
+			},
+			particles: {
+			  color: {
+				value: particleColor,
+			  },
+			  links: {
+				color: linksColor,
+				distance: 150,
+				enable: true,
+				opacity: 0.7,
+				width: 2,
+				triangles: {
+				  enable: true,
+				  color: linksColor,
+				  opacity: 0.2,
+				},
+			  },
+			  collisions: {
+				enable: true,
+			  },
+			  move: {
+				direction: 'none',
+				enable: true,
+				outMode: 'bounce',
+				random: true,
+				speed: 6,
+				straight: false,
+				attract: {
+				  enable: false,
+				  rotateX: 600,
+				  rotateY: 1200,
+				},
+			  },
+			  number: {
+				density: {
+				  enable: true,
+				  value_area: 2000,
+				},
+				value: 80,
+			  },
+			  opacity: {
+				value: 0.9,
+			  },
+			  shape: {
+				type: 'polygon',
+			  },
+			  size: {
+				random: true,
+				value: 5,
+			  },
+			},
+			detectRetina: true,
+		  }}
+		/>
+	  );
+	};
+	
+	export default ParticlesBg;
