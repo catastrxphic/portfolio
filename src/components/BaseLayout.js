@@ -60,6 +60,7 @@ export default function BaseLayout() {
             </Grid>
 
             <Grid item>
+               <br />
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'} py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
                   <p> Cami's Portforlio &hearts; by <a href={'https://paytonpierce.dev'}>Cami Copo Amador</a></p>
                   <p>&copy; August 2023</p>
