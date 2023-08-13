@@ -13,7 +13,7 @@ export const info = {
     selfPortrait: self, 
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
     // baseColor: colors[0],
-    baseColor: 'rgb(163,132,255)',
+    baseColor: 'rgb(220,208,255)',
     miniBio: [ 
         {
             emoji: '☕',
