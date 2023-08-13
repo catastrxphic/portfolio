@@ -14,7 +14,7 @@ export const info = {
     selfPortrait: self, 
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
     // baseColor: colors[0],
-    baseColor: purpleColor,
+    baseColor: purpleColor[0],
     miniBio: [ 
         {
             emoji: '☕',
