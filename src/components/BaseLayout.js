@@ -6,7 +6,7 @@ import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
-import ParticlesBg from './Assets/ParticlesBG';
+import ParticlesBg from './Assets/ParticlesBg';
 import { logGa } from '../log/log';
 
 
