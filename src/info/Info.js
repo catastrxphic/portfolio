@@ -1,9 +1,9 @@
-import self from "../img/self.png"
+import self from "../img/self.jpeg"
 import mock1 from "../img/mock1.webp"
 import mock2 from "../img/mock2.webp"
 import mock3 from "../img/mock3.webp"
 
-export let colors = ["rgb(214, 158, 181)", "rgb(155, 146, 221)"];
+export let colors = ["rgb(254, 158, 181)", "rgb(155, 146, 221)"];
 
 
 export const info = {
@@ -17,11 +17,11 @@ export const info = {
     miniBio: [ 
         {
             emoji: '☕',
-            text: 'fueled by coffee'
+            text: 'Passionate of working at coffee or tea shops'
         },
         {
             emoji: '🏫',
-            text: 'Florida International University'
+            text: 'Florida International University Student'
         },
         {
             emoji: "💼",
