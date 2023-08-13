@@ -4,7 +4,7 @@ import mock2 from "../img/mock2.webp"
 import mock3 from "../img/mock3.webp"
 
 export let colors = ["rgb(254, 158, 181)", "rgb(155, 146, 221)"];
-
+export let purpleColor = ['rgb(86,20,77)'];
 
 export const info = {
     firstName: "Cami",
@@ -14,7 +14,7 @@ export const info = {
     selfPortrait: self, 
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
     // baseColor: colors[0],
-    baseColor: 'rgb(86,20,77)',
+    baseColor: purpleColor,
     miniBio: [ 
         {
             emoji: '☕',
