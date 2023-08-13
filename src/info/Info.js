@@ -12,7 +12,8 @@ export const info = {
     position: "a Computer Science and Asian Studies Student",
     selfPortrait: self, 
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
-    baseColor: colors[0],
+    // baseColor: colors[0],
+    baseColor: 'rgb(163,132,255)',
     miniBio: [ 
         {
             emoji: '☕',
