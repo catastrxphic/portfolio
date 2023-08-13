@@ -83,22 +83,18 @@ export const info = {
     portfolio: [
         {
             title: "MapMe",
-            // live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/catastrxphic/MapModel", // this should be a link to the **repository** of the project, where the code is hosted.
+            source: "https://github.com/catastrxphic/MapModel", 
             image: mock1
         },
         {
             title: "Focus Buddy",
-            // live: "https://paytonpierce.dev",
             source: "https://github.com/catastrxphic/focusBuddy",
             image: mock2
         },
         {
             title: "Littler Detect",
-            // live: "https://paytonpierce.dev",
             source: "https://devpost.com/software/litterdetect",
             image: mock3
         }
-    
     ]
 }
