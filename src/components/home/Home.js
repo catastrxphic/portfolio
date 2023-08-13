@@ -22,7 +22,7 @@ export default function Home({darkMode}) {
          <Box
             style={{
                borderRadius: '1rem',
-               background: darkMode ? 'rgba(163, 184, 158, 0.8)' : 'rgba(255, 255, 255, 0.2)',
+               background: darkMode ? 'rgba(137, 154, 118, 0.8)' : 'rgba(255, 255, 255, 0.2)',
                boxShadow: darkMode
                   ? '0 0 10px 0 rgba(0, 0, 0, 0.2)'
                   : '0 0 10px 0 rgba(255, 255, 255, 0.2)',
